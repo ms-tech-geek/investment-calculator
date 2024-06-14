@@ -64,6 +64,8 @@ const UserInput = () => {
             }
           />
         </p>
+      </div>
+      <div className="input-group">
         <p>
           <label>Expected Return</label>
           <input
