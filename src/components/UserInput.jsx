@@ -11,7 +11,7 @@ const UserInput = ({ onChange, userInput }) => {
             onChange={(event) =>
               onChange({
                 inputIdentifier: 'initialInvestment',
-                newValue: event.target.value,
+                newValue: Number(event.target.value),
               })
             }
           />
@@ -25,7 +25,7 @@ const UserInput = ({ onChange, userInput }) => {
             onChange={(event) =>
               onChange({
                 inputIdentifier: 'annualInvestment',
-                newValue: event.target.value,
+                newValue: Number(event.target.value),
               })
             }
           />
@@ -41,7 +41,7 @@ const UserInput = ({ onChange, userInput }) => {
             onChange={(event) =>
               onChange({
                 inputIdentifier: 'expectedReturn',
-                newValue: event.target.value,
+                newValue: Number(event.target.value),
               })
             }
           />
@@ -55,7 +55,7 @@ const UserInput = ({ onChange, userInput }) => {
             onChange={(event) =>
               onChange({
                 inputIdentifier: 'duration',
-                newValue: event.target.value,
+                newValue: Number(event.target.value),
               })
             }
           />
