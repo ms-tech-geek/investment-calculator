@@ -1,7 +1,12 @@
+import logo from './assets/investment-calculator-logo.png';
+
 function App() {
   return (
-    <h1>React Investment Calculator</h1>
-  )
+    <header id="header">
+      <img src={logo} alt="logo" />
+      <h1>Investment Calculator</h1>
+    </header>
+  );
 }
 
-export default App
+export default App;
