@@ -12,6 +12,9 @@ const defaultUserInput = {
 const UserInput = () => {
   const [userInput, setUserInput] = useState(defaultUserInput);
 
+  DEBUG &&
+    console.log(`UserInput.defaultUserInput`, JSON.stringify(defaultUserInput));
+
   const handleChange = ({ inputIdentifier, newValue }) => {
     DEBUG &&
       console.log(
