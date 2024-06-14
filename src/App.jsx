@@ -1,12 +1,7 @@
-import logo from './assets/investment-calculator-logo.png';
+import Header from './components/Header';
 
-function App() {
-  return (
-    <header id="header">
-      <img src={logo} alt="logo" />
-      <h1>Investment Calculator</h1>
-    </header>
-  );
-}
+const App = () => {
+  return <Header />;
+};
 
 export default App;
