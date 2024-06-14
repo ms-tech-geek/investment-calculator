@@ -1,19 +1,11 @@
 import Header from './components/Header';
+import UserInput from './components/UserInput';
 
 const App = () => {
   return (
     <>
       <Header />
-      <div id="user-input">
-        <label>Initial Investment</label>
-        <input type="number" />
-        <label>Annual Investment</label>
-        <input type="number" />
-        <label>Expected Returns</label>
-        <input type="number" />
-        <label>Duration</label>
-        <input type="number" />
-      </div>
+      <UserInput />
     </>
   );
 };
