@@ -18,6 +18,8 @@ const App = () => {
   DEBUG &&
     console.log(`UserInput.defaultUserInput`, JSON.stringify(defaultUserInput));
 
+  const inputIsValid = userInput.duration >= 1;
+
   const handleChange = ({ inputIdentifier, newValue }) => {
     DEBUG &&
       console.log(
@@ -40,7 +42,10 @@ const App = () => {
     <>
       <Header />
       <UserInput onChange={handleChange} userInput={userInput} />
-      <Results input={userInput} />
+      {!inputIsValid && (
+        <p className="center">Please enter a duration greater than zero.</p>
+      )}
+      {inputIsValid && <Results input={userInput} />}
     </>
   );
 };
